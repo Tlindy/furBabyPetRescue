@@ -1,0 +1,34 @@
+body {
+    background-color: lightskyblue;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-color: lightskyblue;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color:lightpink;
+}
+
+li a {
+    color: white;
+}
+
+li.active {
+    background-color: orange;
+    font-weight: bold;
+}
+
+#adoptFormLink {
+    background-color: lightskyblue;
+    color: navy;
+    font-weight: bold;
+    border: dotted black 2px;
+}

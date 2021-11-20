@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <title>Find A Fur Baby Pet Rescue</title>
+
+
+</head>
+
+<body>
+    <!----------Jumbotron----------> <!----Need to figure out how to make logo bigger possibly-->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/furBabyLogo.png" alt="Find A Fur Baby logo" class="img-fluid" /></a>
+                </div>
+                <div class="col align-self-center">
+                    <h1>Find A Fur Baby</h1>
+                    <h2 class="text-primary">Pet Rescue</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------Navbar----------> <!----Need to figure out how to get the navbar all the way to the right-->
+    <!----Need to fix Navbar collapse and button-->
+    <nav class="navbar navbar-expand-sm stiky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="adoptFormLink">Adoption Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck mt-5">
+                    <div class="card border-dark">
+                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <h3 class="card-header text-center bg-primary text-white">Adopt</h3>
+                        <div class="card-body">
+                            <p class="card-text">
+                                There are so many animals who need a loving home. See which animals we have available. You might just find your next fur baby here!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card border-dark">
+                        <h3 class="card-header text-center bg-primary text-white">Volunteer</h3>
+                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <div class="card-body">
+                            <p class="card-text">
+                                We love to have new volunteers join our team. Find out how you can help more animals find their furever home here! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card border-dark">
+                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <h3 class="card-header text-center bg-primary text-white">Read happy tails</h3>
+                        <div class="card-body">
+                            <p class="card-text">
+                                We have helped many fur babies find a family. Read some of our heartwarming stories here!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-----Footer------------------------>
+  <!------Need to fix/finish footer and add font-awesome icons------>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5">
+                    <h5 text-center>Social</h5>
+                </div>
+                <div class="col mt-5">
+                    <h5 class="text-center">Hours</h5>
+                </div>
+                <div class="col mt-5">
+                    <h5 text-center>Contact Us</h5>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h5>Links</h5>
+                        <a href="#">Home</a>
+                        <a href="#" class="border-left border-dark">Adopt</a>
+                        <a href="#" class="border-left border-dark">Get Involved</a>
+                        <a href="#" class="border-left border-dark">Testimonials</a>
+                        <a href="#" class="border-left border-dark">Resources</a>
+                        <a href="#" class="border-left border-dark">About</a>
+                        <a href="#" class="border-left border-dark">Adoption Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-----------JS necessary for some Bootstrap elements------>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
