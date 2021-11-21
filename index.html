@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
     <title>Find A Fur Baby Pet Rescue</title>
 
@@ -32,14 +33,13 @@
         </div>
     </header>
 
-    <!-------Navbar----------> <!----Need to figure out how to get the navbar all the way to the right-->
-    <!----Need to fix Navbar collapse and button-->
-    <nav class="navbar navbar-expand-sm stiky-top">
+    <!-------Navbar---------->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#furBabyNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="collapse navbar-collapse" id="furBabyNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Adopt</a></li>
@@ -55,32 +55,75 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-md-8 mx-auto mt-5 mb-4">
+                <div id="shelterCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#shelterCarousel" data-slide-to="0"></li>
+                        <li data-target="#shelterCarousel" data-slide-to="1"></li>
+                        <li data-target="#shelterCarousel" data-slide-to="2"></li>
+                        <li data-target="#shelterCarousel" data-slide-to="3"></li>
+                        <li data-target="#shelterCarousel" data-slide-to="4"></li>
+                        <li data-target="#shelterCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/dogsToAdopt.jpg" alt="Two dogs with bows wating to be adopted" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/catsPlaying.jpg" alt="Two cats playing on a cat shelf" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/takeMeHomeSign.jpg" alt="A dog with a sign at it's feet that says take me home" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/dogBirthday.jpg" alt="A dog wearing a birthday hat that says free on it" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/catsRelaxing.jpg" alt="Two cats laying down" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/dogPlaying.jpg" alt="A dog running with a soccer ball in it's mouth" class="d-block w-100" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" role="button" href="#shelterCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" role="button" href="#shelterCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+  <!-----------------Homepage cards--------------->
+        <div class="row">
             <div class="col">
-                <div class="card-deck mt-5">
+                <div class="card-deck mt-5 mb-5">
                     <div class="card border-dark">
-                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <img src="img/adopt.jpg" alt="Person holding a dog and a cat" class="card-img-top">
                         <h3 class="card-header text-center bg-primary text-white">Adopt</h3>
                         <div class="card-body">
                             <p class="card-text">
-                                There are so many animals who need a loving home. See which animals we have available. You might just find your next fur baby here!
+                                There are so many animals who need a loving home. See which animals we have available. You might just find your next fur baby <a href="#" class="stretched-link">here!</a>
                             </p>
                         </div>
                     </div>
                     <div class="card border-dark">
                         <h3 class="card-header text-center bg-primary text-white">Volunteer</h3>
-                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <img src="img/volunteers2.jpg" alt="Two volunteers hugging a dog and smiling" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">
-                                We love to have new volunteers join our team. Find out how you can help more animals find their furever home here! 
+                                We love to have new volunteers join our team. Find out how you can help more animals find their furever home <a href="#" class="stretched-link">here!</a>
                             </p>
                         </div>
                     </div>
                     <div class="card border-dark">
-                        <img src="img/furBabyLogo.png" alt="" class="card-img-top"> <!-----Find stock image to replace logo stand-in-->
+                        <img src="img/dogReading.jpg" alt="A dog wearing glasses and reading a book" class="card-img-top">
                         <h3 class="card-header text-center bg-primary text-white">Read happy tails</h3>
                         <div class="card-body">
                             <p class="card-text">
-                                We have helped many fur babies find a family. Read some of our heartwarming stories here!
+                                We have helped many fur babies find a family. Read some of our heartwarming stories <a href="#" class="stretched-link">here!</a>
                             </p>
                         </div>
                     </div>
@@ -89,30 +132,52 @@
         </div>
     </div>
   <!-----Footer------------------------>
-  <!------Need to fix/finish footer and add font-awesome icons------>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col mt-5">
-                    <h5 text-center>Social</h5>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col mt-5">
-                    <h5 class="text-center">Hours</h5>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Hours</h5>
+                    <p class="mb-0">Monday-Saturday:12 p.m.-5 p.m.</p>
+                    <p>Sunday: Closed</p>
                 </div>
-                <div class="col mt-5">
-                    <h5 text-center>Contact Us</h5>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Location</h5>
+                    <address>
+                        1234 Main St.<br>
+                        Detroit, MI 12345<br>
+                    </address>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <h5>Links</h5>
-                        <a href="#">Home</a>
-                        <a href="#" class="border-left border-dark">Adopt</a>
-                        <a href="#" class="border-left border-dark">Get Involved</a>
-                        <a href="#" class="border-left border-dark">Testimonials</a>
-                        <a href="#" class="border-left border-dark">Resources</a>
-                        <a href="#" class="border-left border-dark">About</a>
-                        <a href="#" class="border-left border-dark">Adoption Form</a>
-                    </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Contact Us</h5>
+                    <a role="button" class="btn btn-link" href="tel:+12065551234">
+                        <i class="fa fa-phone"></i> 1-200-444-1234
+                    </a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co">
+                        <i class="fa fa-envelope-o"></i> findafurbaby@email.com
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5>Links</h5>
+                    <a href="#">Home</a>
+                    <a href="#" class="border-left border-dark">Adopt</a>
+                    <a href="#" class="border-left border-dark">Get Involved</a>
+                    <a href="#" class="border-left border-dark">Testimonials</a>
+                    <a href="#" class="border-left border-dark">Resources</a>
+                    <a href="#" class="border-left border-dark">About</a>
+                    <a href="#" class="border-left border-dark">Adoption Form</a>
                 </div>
             </div>
         </div>

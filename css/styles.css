@@ -17,10 +17,6 @@ h1 {
     background-color:lightpink;
 }
 
-li a {
-    color: white;
-}
-
 li.active {
     background-color: orange;
     font-weight: bold;
@@ -31,4 +27,8 @@ li.active {
     color: navy;
     font-weight: bold;
     border: dotted black 2px;
+}
+
+.site-footer {
+    background-image: linear-gradient(white, lightskyblue, lightpink);
 }
