@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <title>Find A Fur Baby Pet Rescue</title>
+
+
+</head>
+
+<body>
+    <!----------Jumbotron---------->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/furBabyLogo.png" alt="Find A Fur Baby logo"
+                            class="img-fluid" /></a>
+                </div>
+                <div class="col align-self-center">
+                    <h1>Find A Fur Baby</h1>
+                    <h2 class="text-primary">Pet Rescue</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------Navbar---------->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#furBabyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="furBabyNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adoptionForm.html" id="adoptFormLink">Adoption Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h1 class="text-center">How to get involved</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h3>What should you know before volunteering?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum, ante at feugiat laoreet, urna ipsum auctor ligula, nec ullamcorper nisl ex at dui. Sed hendrerit tempus nisl vitae pulvinar. Etiam lectus nunc, feugiat ac nibh et, consequat bibendum augue. Duis quis pulvinar massa. Aliquam eget sapien sit amet risus varius gravida ut auctor est. Maecenas lectus urna, gravida sit amet ultrices eu, luctus et magna. Cras maximus, enim id auctor vestibulum, tortor eros mollis lorem, sed suscipit nulla velit ut urna. Maecenas posuere nisl nec odio lacinia maximus. Phasellus vulputate tellus sit amet eros pretium, vel venenatis metus tempus. Sed tincidunt lorem a nisl ultricies ullamcorper. Aliquam erat volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum, ante at feugiat laoreet, urna ipsum auctor ligula, nec ullamcorper nisl ex at dui. Sed hendrerit tempus nisl vitae pulvinar. Etiam lectus nunc, feugiat ac nibh et, consequat bibendum augue. Duis quis pulvinar massa. Aliquam eget sapien sit amet risus varius gravida ut auctor est. Maecenas lectus urna, gravida sit amet ultrices eu, luctus et magna. Cras maximus, enim id auctor vestibulum, tortor eros mollis lorem, sed suscipit nulla velit ut urna. Maecenas posuere nisl nec odio lacinia maximus. Phasellus vulputate tellus sit amet eros pretium, vel venenatis metus tempus. Sed tincidunt lorem a nisl ultricies ullamcorper. Aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h3>If you would like to be contacted about volunteering please fill out the form below:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName" class="col-form-label font-weight-bold">First Name:*</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName" class="col-form-label font-weight-bold">Last Name:*</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                        <label for="areaCode" class="col-form-label font-weight-bold">Phone Number:*</label>
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" required/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="col-form-label font-weight-bold">Format: ###-####</label>
+                            <input type="tel" class="form-control" name="phoneNum" placeholder="Phone Number" required/>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="email" class="col-form-label font-weight-bold">Email:*</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="address" class="col-form-label font-weight-bold">Address:</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St." />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="address2" class="col-form-label font-weight-bold">Address 2:</label>
+                            <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt, suite, etc." />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city" class="col-form-label font-weight-bold">City:</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="City" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state" class="col-form-label font-weight-bold">State:</label>
+                            <input type="text" class="form-control" id="state" name="state" placeholder="State" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="zipCode" class="col-form-label font-weight-bold">Zip Code:</label>
+                            <input type="text" class="form-control" id="zipCode" name="zipCode" placeholder="Zip Code" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label class="col-form-label font-weight-bold">How old are you?*</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="under21" name="age" value="under21" />
+                            <label for="under21" class="form-check-label font-weight-bold">Under 21</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="21-24" name="age" value="21-24" />
+                            <label for="21-24" class="form-check-label font-weight-bold">21-24</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="25-30" name="age" value="25-30" />
+                            <label for="25-30" class="form-check-label font-weight-bold">25-30</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="31-40" name="age" value="31-40" />
+                            <label for="31-40" class="form-check-label font-weight-bold">31-40</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="41-55" name="age" value="41-55" />
+                            <label for="41-55" class="form-check-label font-weight-bold">41-55</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="56-65" name="age" value="56-65" />
+                            <label for="56-65" class="form-check-label font-weight-bold">56-65</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="over65" name="age" value="over65" />
+                            <label for="over65" class="form-check-label font-weight-bold">Over 65</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="infoCorrect" required />
+                                <label for="infoCorrect" class="form-check-label">The above information is correct to the best of my knowledge</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="agreeContact" required />
+                                <label for="agreeContact" class="form-check-label">By submitting this form I am agreeing to be contacted by Find A Fur Baby</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group offset-md-5">
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-----Footer------------------------>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Hours</h5>
+                    <p class="mb-0">Monday-Saturday: 12 p.m.-5 p.m.</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Location</h5>
+                    <address>
+                        1234 Main St.<br>
+                        Detroit, MI 12345<br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Contact Us</h5>
+                    <a role="button" class="btn btn-link" href="tel:+12065551234">
+                        <i class="fa fa-phone"></i> 1-200-444-1234
+                    </a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co">
+                        <i class="fa fa-envelope-o"></i> findafurbaby@email.com
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5>Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="adopt.html" class="border-left border-dark">Adopt</a>
+                    <a href="#" class="border-left border-dark">Get Involved</a>
+                    <a href="#" class="border-left border-dark">Testimonials</a>
+                    <a href="#" class="border-left border-dark">Resources</a>
+                    <a href="#" class="border-left border-dark">About</a>
+                    <a href="adoptionForm.html" class="border-left border-dark">Adoption Form</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-----------JS necessary for some Bootstrap elements------>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
