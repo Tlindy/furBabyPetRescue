@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <title>Find A Fur Baby Pet Rescue</title>
+
+
+</head>
+
+<body>
+    <!----------Jumbotron---------->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/furBabyLogo.png" alt="Find A Fur Baby logo"
+                            class="img-fluid" /></a>
+                </div>
+                <div class="col align-self-center">
+                    <h1>Find A Fur Baby</h1>
+                    <h2 class="text-primary">Pet Rescue</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------Navbar---------->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#furBabyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="furBabyNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#" id="adoptFormLink">Adoption Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    <!-------Navigation Tabs-------------->
+        <ul class="nav nav-tabs mt-4">
+            <li class="nav-item">
+                <a href="adopt.html" class="nav-link">Dogs</a>
+            </li>
+            <li class="nav-item">
+                <a href="adoptCats1.html" class="nav-link">Cats</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Adoption Form</a>
+            </li>
+        </ul>
+
+        <div class="row mt-2">
+            <div class="col">
+                <h1 class="text-center">Find A Fur Baby Adoption Form</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <h3>Important Information before you fill out this form:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et arcu sem. Integer vitae nulla enim. Nullam finibus fermentum nunc sit amet tristique. Proin pretium sit amet nibh eget euismod. Nunc lectus dui, mattis eu diam eu, mattis ornare nibh. Cras in interdum elit, id lacinia mi. Donec a justo et odio hendrerit hendrerit a et odio. Praesent magna purus, consectetur non lorem eget, accumsan pharetra lorem. Curabitur lacinia velit eu semper aliquet. Nullam ullamcorper aliquet mauris at imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor urna, lacinia ac rhoncus sit amet, pharetra mollis libero. Vestibulum quis placerat mi. Nunc a odio tellus. Curabitur posuere dui quam, eget condimentum risus mollis eu. Sed aliquet massa quis arcu egestas dignissim eu tincidunt neque.</p>
+                <p>Fusce lacinia metus a elit faucibus elementum. Pellentesque sed mi id arcu lacinia ornare. Nulla eu dolor iaculis, ultrices quam sit amet, imperdiet urna. Suspendisse nulla lectus, sodales ut varius sit amet, pellentesque imperdiet lectus. Curabitur ac posuere dui. Morbi et maximus nulla. Donec tincidunt convallis lacus vitae pretium. Praesent ligula mi, volutpat id consectetur a, imperdiet iaculis tellus.</p>
+            </div>
+        </div>
+    <!-------Adoption Form-------------->
+        <div class="row mt-3">
+            <div class="col">
+                <p>*= required field</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName" class="col-form-label font-weight-bold">First Name:*</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName" class="col-form-label font-weight-bold">Last Name:*</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="whichFurBaby" class="col-form-label font-weight-bold">Which fur baby are you interested in?</label>
+                            <input type="text" class="form-control" id="whichFurBaby" name="whichFurBaby" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="col-form-label font-weight-bold">The fur baby I am interested in is a:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="dog" name="furBabyType" value="dog" />
+                                <label for="dog" class="form-check-label font-weight-bold">Dog</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="cat" name="furBabyType" value="cat" />
+                                <label for="cat" class="form-check-label font-weight-bold">Cat</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                        <label for="areaCode" class="col-form-label font-weight-bold">Phone Number:*</label>
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" required/>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="col-form-label font-weight-bold">Format: ###-####</label>
+                            <input type="tel" class="form-control" name="phoneNum" placeholder="Phone Number" required/>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="email" class="col-form-label font-weight-bold">Email:*</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="address" class="col-form-label font-weight-bold">Address:</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St." />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="address2" class="col-form-label font-weight-bold">Address 2:</label>
+                            <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt, suite, etc." />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city" class="col-form-label font-weight-bold">City:</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="City" />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state" class="col-form-label font-weight-bold">State:</label>
+                            <input type="text" class="form-control" id="state" name="state" placeholder="State" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="zipCode" class="col-form-label font-weight-bold">Zip Code:</label>
+                            <input type="text" class="form-control" id="zipCode" name="zipCode" placeholder="Zip Code" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label class="col-form-label font-weight-bold">What is your living arrangement?*</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="house" name="livingArrangement" value="house" />
+                                <label for="house" class="form-check-label font-weight-bold">House</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="apartment" name="livingArrangement" value="apartment" />
+                                <label for="apartment" class="form-check-label font-weight-bold">Apartment</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="condo" name="livingArrangement" value="condo" />
+                                <label for="condo" class="form-check-label font-weight-bold">Condo</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="duplex" name="livingArrangement" value="duplex" />
+                                <label for="duplex" class="form-check-label font-weight-bold">Duplex</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="mobileHome" name="livingArrangement" value="mobileHome" />
+                                <label for="mobileHome" class="form-check-label font-weight-bold">Mobile Home</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="guestHouse" name="livingArrangement" value="guestHouse" />
+                                <label for="guestHouse" class="form-check-label font-weight-bold">Guest House</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="otherHome" name="livingArrangement" value="otherHome" />
+                                <label for="otherHome" class="form-check-label font-weight-bold">Other</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="col-form-label font-weight-bold">Do you rent or own?*</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="own" name="rentOrOwn" value="own" />
+                                <label for="own" class="form-check-label font-weight-bold">Own</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="rent" name="rentOrOwn" value="rent" />
+                                <label for="rent" class="form-check-label font-weight-bold">Rent</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="col-form-label font-weight-bold">How old are you?*</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="under21" name="age" value="under21" />
+                                <label for="under21" class="form-check-label font-weight-bold">Under 21</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="21-24" name="age" value="21-24" />
+                                <label for="21-24" class="form-check-label font-weight-bold">21-24</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="25-30" name="age" value="25-30" />
+                                <label for="25-30" class="form-check-label font-weight-bold">25-30</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="31-40" name="age" value="31-40" />
+                                <label for="31-40" class="form-check-label font-weight-bold">31-40</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="41-55" name="age" value="41-55" />
+                                <label for="41-55" class="form-check-label font-weight-bold">41-55</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="56-65" name="age" value="56-65" />
+                                <label for="56-65" class="form-check-label font-weight-bold">56-65</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="over65" name="age" value="over65" />
+                                <label for="over65" class="form-check-label font-weight-bold">Over 65</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="col-form-label font-weight-bold">How many children are in your home?*</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="zeroChildren" name="numChildren" value="0" />
+                                <label for="zeroChildren" class="form-check-label font-weight-bold">0</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="oneChild" name="numChildren" value="1" />
+                                <label for="oneChild" class="form-check-label font-weight-bold">1</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="twoChildren" name="numChildren" value="2" />
+                                <label for="twoChildren" class="form-check-label font-weight-bold">2</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="threeChildren" name="numChildren" value="3" />
+                                <label for="threeChildren" class="form-check-label font-weight-bold">3</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="fourChildren" name="numChildren" value="4" />
+                                <label for="fourChildren" class="form-check-label font-weight-bold">4</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="fivePlusChildren" name="numChildren" value="moreThanFive" />
+                                <label for="fivePlusChildren" class="form-check-label font-weight-bold">5+</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label class="col-form-label font-weight-bold">How old are they?*</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childUnder3" name="childrenAge" value="under3" />
+                                <label for="childUnder3" class="form-check-label font-weight-bold">Under 3</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childAge3-5" name="childrenAge" value="3-5" />
+                                <label for="childAge3-5" class="form-check-label font-weight-bold">3-5</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childAge6-8" name="childrenAge" value="6-8" />
+                                <label for="childAge6-8" class="form-check-label font-weight-bold">6-8</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childAge9-12" name="childrenAge" value="9-12" />
+                                <label for="childAge9-12" class="form-check-label font-weight-bold">9-12</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childAge13-16" name="childrenAge" value="13-16" />
+                                <label for="childAge13-16" class="form-check-label font-weight-bold">13-16</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="childOver17" name="numChildren" value="over17" />
+                                <label for="childOver17" class="form-check-label font-weight-bold">Over 17</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="experienceLevel" class="col-form-label font-weight-bold">What level of experience do you have with pets?</label>
+                            <select name="petExperienceLevel" id="experienceLevel" class="form-control">
+                                <option selected>Select Experience Level...</option>
+                                <option value="firstTimeOwner">First time owner</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="describeExperience" class="col-form-label font-weight-bold">Briefly describe your prior pet experience:</label>
+                            <div>
+                                <textarea name="describeExperience" id="describeExperience" class="form-control" rows="8" placeholder="My prior pet experience is..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="infoCorrect" required />
+                                <label for="infoCorrect" class="form-check-label">The above information is correct to the best of my knowledge</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="agreeContact" required />
+                                <label for="agreeContact" class="form-check-label">By submitting this form I am agreeing to be contacted by Find A Fur Baby</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group offset-md-5">
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-----Footer------------------------>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Hours</h5>
+                    <p class="mb-0">Monday-Saturday: 12 p.m.-5 p.m.</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Location</h5>
+                    <address>
+                        1234 Main St.<br>
+                        Detroit, MI 12345<br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-3 mt-5 text-center">
+                    <h5>Contact Us</h5>
+                    <a role="button" class="btn btn-link" href="tel:+12065551234">
+                        <i class="fa fa-phone"></i> 1-200-444-1234
+                    </a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co">
+                        <i class="fa fa-envelope-o"></i> findafurbaby@email.com
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5>Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="adopt.html" class="border-left border-dark">Adopt</a>
+                    <a href="#" class="border-left border-dark">Get Involved</a>
+                    <a href="#" class="border-left border-dark">Testimonials</a>
+                    <a href="#" class="border-left border-dark">Resources</a>
+                    <a href="#" class="border-left border-dark">About</a>
+                    <a href="#" class="border-left border-dark">Adoption Form</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-----------JS necessary for some Bootstrap elements------>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
